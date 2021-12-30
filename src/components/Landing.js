@@ -1,4 +1,4 @@
-const Body = () => {
+const Landing = () => {
     const currentTime = new Date();
 
     return (
@@ -104,4 +104,4 @@ const Body = () => {
     )
 }
 
-export default Body
+export default Landing

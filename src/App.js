@@ -1,7 +1,12 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 import './App.css'
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
-// import Body from './components/Body';
+import Landing from './components/Landing';
+import Piano from './components/Piano';
+import Feedback from './components/Feedback';
+import About from './components/About';
 
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
@@ -26,14 +31,23 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <>
+    <Router>
       <Navigation />
-      {/* <Body /> */}
-      <section className="antique">
-        { user ? <ChatRoom /> : <SignIn /> }
-      </section>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/piano' element={<Piano />} />
+        <Route path='/messaging' element={
+          <main>
+            <section className="antique">
+              { user ? <ChatRoom /> : <SignIn /> }
+            </section>
+          </main>
+        } />
+        <Route path='/feedback' element={<Feedback />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
@@ -44,12 +58,27 @@ function SignIn() {
   }
 
   return (
-    <button onClick={ signInWithGoogle }>Sign in with Google</button>
+    <>
+      <h1>Welcome to the Chatroom</h1>
+      <p>Sign in with Google to participate in constructive discourse of any kind with a welcoming community. Be mindful however of language/vulgarity, else you will be banned.</p>
+      <button onClick={ signInWithGoogle }>Sign in with Google</button>
+    </>
+  )
+}
+
+function SignOut() {
+  return auth.currentUser && (
+    <button onClick={ () => auth.signOut() }>Sign Out</button>
   )
 }
 
 function ChatRoom() {
-  
+  return (
+    <>
+      <p>Yell heah</p>
+      <SignOut />
+    </>
+  )
 }
 
 export default App;
