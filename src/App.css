@@ -9,6 +9,11 @@
   --transition-speed: 750ms;
 }
 
+img {
+  width: 14rem;
+  height: 14rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -144,7 +149,7 @@ section svg {
   max-height: 2rem;
   display: inline;
   vertical-align: bottom;
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
 }
 
 footer {
@@ -198,10 +203,6 @@ footer {
       height: 5rem;
   }
 
-  .logo {
-      display: none;
-  }
-
   .navbar-nav {
       flex-direction: row;
   }
@@ -213,6 +214,7 @@ footer {
   .nav-link svg {
       width: 1.7rem;
       min-width: 1.7rem;
+      max-height: 1.6rem;
       margin: 0 1.2rem;
   }
 

@@ -60,7 +60,7 @@ function SignIn() {
   return (
     <>
       <h1>Welcome to the Chatroom</h1>
-      <p>Sign in with Google to participate in constructive discourse of any kind with a welcoming community. Be mindful however of language/vulgarity, else you will be banned.</p>
+      <p>Sign in with Google to participate in constructive discourse of any kind with an inviting community. Be mindful, however, of language/vulgarity lest you are banned.</p>
       <button onClick={ signInWithGoogle }>Sign in with Google</button>
     </>
   )

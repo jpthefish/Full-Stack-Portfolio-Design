@@ -4,7 +4,7 @@ const Landing = () => {
     return (
         <main>
             <section className="antique">
-                <h1>{currentTime.getUTCHours() < 6 ? 'Good Evening' : 'Hello Guest'}</h1>
+                <img src="/android-chrome-512x512.png" alt="🐟"></img>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos non officia. Voluptatum dolore nulla expedita, vel obcaecati officia itaque
                 ducimus, corporis natus fuga dolorum id fugiat, tempora quos perferendis?</p>
             </section>
