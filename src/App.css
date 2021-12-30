@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+:root {
+  font-size: 17px;
+  font-family: 'Merriweather', serif;
+  --primary-dark: darkslategray;
+  --secondary-dark: #233d3d;
+  --tertiary-dark: #395f5f;
+  --primary-light: antiquewhite;
+  --secondary-light: mintcream;
+  --transition-speed: 750ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-dark);
+  background: var(--tertiary-dark);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* scroller */
+body::-webkit-scrollbar {
+  width: 0.47rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body::-webkit-scrollbar-track {
+  background: var(--tertiary-dark);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary-dark);
+}
+
+/* navigation */
+.navbar {
+  z-index: 1;
+  position: fixed;
+  background-color: var(--primary-dark);
+  transition: width 250ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-weight: bold;
+  margin-bottom: 0rem;
+  text-align: center;
+  background: var(--secondary-dark);
+  font-size: 1.4rem;
+  letter-spacing: 0.2ch;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.logo .nav-link {
+  color: var(--secondary-light);
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: transform var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  background: var(--secondary-dark);
+  color: var(--secondary-light);
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  margin: 0 1.5rem;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.fa-primary, .fa-secondary {
+  transition: var(--transition-speed);
+}
+
+/* main */
+main {
+  margin-left: 5rem;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 269px;
+  padding: 100px 20vw;
+}
+
+section svg {
+  width: 2rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  display: inline;
+  vertical-align: bottom;
+  margin-left: 0.25rem;
+}
+
+footer {
+  z-index: -1;
+  margin-left: 5rem;
+  color: var(--primary-light);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 10vw;
+}
+
+.antique {
+  background: var(--primary-light);
+}
+
+.cream {
+  background: var(--secondary-light);
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 49px;
+}
+
+.wave .shape-fill {
+  fill: var(--primary-light);
+}
+
+.antique .wave .shape-fill {
+  fill: var(--secondary-light);
+}
+
+/* misc. elements */
+
+.spinner {
+  height: 30px;
+  width: 30px;
+  animation: spinner 3.7s linear infinite;
+}
+
+@keyframes spinner {
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .navbar-nav {
+      flex-direction: row;
+  }
+
+  .nav-link {
+      justify-content: center;
+  }
+
+  .nav-link svg {
+      width: 1.7rem;
+      min-width: 1.7rem;
+      margin: 0 1.2rem;
+  }
+
+  main {
+      margin: 0;
+  }
+
+  footer {
+      margin: 0;
+  }
+}
+
+/* large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+  }
+
+  .navbar:hover {
+      width: 15.7rem;
+  }
+
+  .navbar:hover .link-text {
+      display: inline;
   }
 }
