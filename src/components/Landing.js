@@ -1,10 +1,23 @@
+import { useState, useEffect } from "react";
+
 const Landing = () => {
-    const currentTime = new Date();
+    const welcomeText = ["Welcome to", "Bienvenido a", "Bienvenue sur"];
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => {
+                return prevIndex + 1 < welcomeText.length ? prevIndex + 1 : 0
+            });
+        }, 3700);
+
+        return () => clearInterval(interval)
+    })
 
     return (
         <main>
             <section className="antique">
-                <img src="/android-chrome-512x512.png" alt="🐟"></img>
+                <h1 className="primary-h1" key={welcomeText[index]}>{ welcomeText[index] }<img src="/android-chrome-512x512.png" alt="🐟" /></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos non officia. Voluptatum dolore nulla expedita, vel obcaecati officia itaque
                 ducimus, corporis natus fuga dolorum id fugiat, tempora quos perferendis?</p>
             </section>

@@ -9,11 +9,6 @@
   --transition-speed: 750ms;
 }
 
-img {
-  width: 14rem;
-  height: 14rem;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -26,10 +21,10 @@ button {
   background-color: var(--tertiary-dark);
   color: var(--primary-light);
   border: none;
-  padding: 13px;
+  padding: 0.45rem;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 button:hover {
@@ -139,14 +134,26 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 269px;
+  min-height: 250px;
   padding: 100px 20vw;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+section li svg {
+  color: var(--tertiary-dark);
+  height: 100%;
 }
 
 section svg {
   width: 2rem;
-  min-width: 2rem;
-  max-height: 2rem;
+  height: 2rem;
   display: inline;
   vertical-align: bottom;
   margin-left: 0.5rem;
@@ -161,6 +168,26 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 100px 10vw;
+}
+
+.primary-h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: var(--secondary-dark);
+  animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn {
+  from {opacity:0.1;}
+  to {opacity:1;}
+}
+
+section img {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: inline;
+  vertical-align: bottom;
+  margin-left: 1.2rem;
 }
 
 .antique {

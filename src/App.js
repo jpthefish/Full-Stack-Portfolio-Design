@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import './App.css'
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Landing from './components/Landing';
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navigation />
       <Routes>
         <Route path='/' element={<Landing />} />
@@ -60,7 +62,7 @@ function SignIn() {
   return (
     <>
       <h1>Welcome to the Chatroom</h1>
-      <p>Sign in with Google to participate in constructive discourse of any kind with an inviting community. Be mindful, however, of language/vulgarity lest you are banned.</p>
+      <p>Sign in with Google to participate in constructive discourse with an inviting community. Be mindful, however, of your language/vulgarity lest you are banned.</p>
       <button onClick={ signInWithGoogle }>Sign in with Google</button>
     </>
   )
