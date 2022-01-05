@@ -59,21 +59,59 @@ input[type=submit] {
 /* chatroom */
 .chatroom-form {
   display: flex;
-  margin-bottom: 2rem;
+  margin: 1rem;
 }
 
-/* .chatroom-message-area {
-  border: 2px solid var(--primary-dark);
-  border-radius: 4px;
+.chatroom-message-area {
+  width: 100%;
+  height: 60vh;
+  overflow-y: scroll;
 }
 
-.msg-sent {
-  float: right;
+.chatroom-message-area::-webkit-scrollbar {
+  width: 0.47rem;
 }
 
-.msg-received {
-  float: left;
-} */
+.chatroom-message-area::-webkit-scrollbar-track {
+  background: var(--secondary-light);
+}
+
+.chatroom-message-area::-webkit-scrollbar-thumb {
+  background: var(--tertiary-dark);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.message p {
+  border-radius: 25px;
+  padding: 8px 12px;
+  max-width: 500px;
+}
+
+.message img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  align-self: flex-end;
+  background-color: var(--tertiary-dark);
+  color: var(--primary-light);
+}
+
+.received p {
+  background-color: var(--secondary-light);
+  color: var(--tertiary-dark);
+}
 
 /* scroller */
 body::-webkit-scrollbar {
@@ -81,7 +119,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--tertiary-dark);
+  background: var(--secondary-light);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -298,6 +336,10 @@ section img {
 
   form {
     width: 100%;
+  }
+
+  .chatroom-message-area {
+    width: 95vw;
   }
 }
 

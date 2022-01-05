@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import './App.css'
 import ScrollToTop from './components/ScrollToTop';
@@ -16,7 +16,7 @@ import 'firebase/compat/auth';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import { async } from '@firebase/util';
+// import { async } from '@firebase/util';
 
 firebase.initializeApp({
   apiKey: "AIzaSyASbVGnoqXjQljVjgy44uE4RpPAuPEWJQg",
@@ -77,6 +77,7 @@ function SignOut() {
 }
 
 function ChatRoom() {
+  const messageAreaBottom = useRef();
   const messagesRef = firestore.collection('messages');
   const query = messagesRef.orderBy('createdAt').limit(25);
   const [messages] = useCollectionData(query, {idField: 'id'});
@@ -95,12 +96,14 @@ function ChatRoom() {
     });
 
     setFormValue('');
+    messageAreaBottom.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
     <>
       <div className='chatroom-message-area'>
         {messages && messages.map(msg => <ChatMessage key={ msg.id } message={ msg } />)}
+        <div ref={messageAreaBottom}></div>
       </div>
 
       <form className='chatroom-form' onSubmit={sendMessage}>
@@ -119,14 +122,14 @@ function ChatRoom() {
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
 
-  const messageClass = uid === auth.currentUser.uid ? 'msg-sent' : 'msg-received';
+  const messageClass = uid === auth.currentUser.uid ? 'message sent' : 'message received';
 
-  return (
-    <div className={ messageClass }>
-      <img src={ photoURL } />
+  return (<>
+    <div className={ messageClass } >
+      <img src={ photoURL } alt='' />
       <p>{ text }</p>
     </div>
-  )
+  </>)
 }
 
 export default App;
