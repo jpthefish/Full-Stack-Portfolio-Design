@@ -18,7 +18,7 @@ const Landing = () => {
         <main>
             <section className="antique">
                 <h1 className="primary-h1" key={welcomeText[index]}>{ welcomeText[index] }<img src="/android-chrome-512x512.png" alt="🐟" /></h1>
-                <p>This website is an experimental development platform created and maintained by the developer, Joey Paul Eli Haynes. The platform is continually revised and updated with new features through the help of innovative and insightful user ideas and feedback.</p>
+                <p>This website is an experimental development platform created and maintained by Joey, the developer. The platform is continually revised and updated with new features through the help of innovative and insightful user ideas and feedback.</p>
             </section>
             <section className="cream">
                 <h1>Post a Message
