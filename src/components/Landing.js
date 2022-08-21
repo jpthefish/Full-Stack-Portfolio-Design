@@ -43,7 +43,7 @@ const Landing = () => {
                 </div>
             </section>
             <section className="antique">
-                <h1>Play a Piano
+                <h1>Play a Musical Instrument
                 <svg 
                     aria-hidden="true"
                     focusable="false" 
@@ -57,7 +57,7 @@ const Landing = () => {
                     <path fill="currentColor" d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"></path>
                 </svg>
                 </h1>
-                <p>(Coming soon.) Play an on-screen piano with mouse and keyboard interactivity to quickly capture and demonstrate music ideas.</p>
+                <p>(Coming soon.) Access a music library and play an on-screen instrument with mouse and keyboard interactivity to quickly capture and demonstrate music ideas.</p>
                 <div className="wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
