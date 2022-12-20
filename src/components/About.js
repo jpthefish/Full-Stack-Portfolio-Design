@@ -3,7 +3,7 @@ const About = () => {
         <main>
             <section className="antique">
                 <h1>About the Developer</h1>
-                <p>My name is Joey and I am an undergraduate student studying computer science and applied mathematics. I am seeking to improve the world through technological, engineering, and social practices. Moreover, I have knowledge and experience in full-stack development, data analysis, and UX design.</p>
+                <p>My name is Joey and I am an undergraduate student studying computer science and applied mathematics. I am seeking to improve the world through technological, engineering, and social practices. Moreover, I have knowledge and experience in software engineering, data analysis, and product design.</p>
                 <ul>
                     <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer"><button className="button">View Resume</button></a></li>
                     <li>
@@ -33,7 +33,7 @@ const About = () => {
             </section>
             <section className="antique">
                 <h1>My Education</h1>
-                <p>I am currently pursuing a Bachelor of Science in Computer Science at Southern New Hampshire University, where I expect to graduate by Winter 2024. My passion for learning about the subject and its societal implications has allowed me to persevere through academic rigor and develop meaningful work.</p>
+                <p>I am currently pursuing a Bachelor of Science in Computer Science at Southern New Hampshire University, where I expect to graduate by December 2023. My passion for learning about the subject and its societal implications has allowed me to persevere through academic rigor and develop meaningful work.</p>
                 <div className="wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
