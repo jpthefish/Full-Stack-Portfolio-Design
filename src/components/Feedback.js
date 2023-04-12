@@ -21,7 +21,7 @@ const Feedback = () => {
         <main>
             <section className="antique">
                 <h1>Share feedback, ideas, questions, or concerns</h1>
-                <p>Provide a name, an email, a subject, and a messsage. The developer will then respond to all correspondence swiftly and considerately.</p>
+                <p>Provide a name, an email, a subject, and a message, and the developer will respond to all correspondence swiftly.</p>
                 <form onSubmit={ sendEmail }>
                     <div>
                         <input type="text" placeholder="Name" name="name" required/>

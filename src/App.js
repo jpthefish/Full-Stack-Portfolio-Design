@@ -6,7 +6,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
-import Piano from './components/Piano';
+import Research from './components/Research';
 import Feedback from './components/Feedback';
 import About from './components/About';
 
@@ -46,7 +46,7 @@ function App() {
             </section>
           </main>
         } />
-        <Route path='/piano' element={<Piano />} />
+        <Route path='/research' element={<Research />} />
         <Route path='/feedback' element={<Feedback />} />
         <Route path='/about' element={<About />} />
       </Routes>
@@ -64,7 +64,7 @@ function SignIn() {
   return (
     <>
       <h1>Welcome to the Chatroom</h1>
-      <p>Sign in with Google to participate in constructive discourse with an inviting community. Be mindful, however, of your language/vulgarity lest you are banned!</p>
+      <p>Sign in with Google to participate in constructive discourse, make friends, and showcase creative ideas.</p>
       <button className="button" onClick={ signInWithGoogle }>Sign in with Google</button>
     </>
   )
