@@ -5,7 +5,7 @@ const About = () => {
                 <h1>About the Developer</h1>
                 <p>My name is Joey and I am a college senior with knowledge and experience in data science, software engineering, and product design. I seek to promote global development and access to education through technology, research, and social practices.</p>                
                 <ul>
-                    <li><a href="/JP Haynes Resume.pdf" target="_blank" rel="noopener noreferrer"><button className="button">View Resume</button></a></li>
+                    <li><a href="/Your_Next_Hire.pdf" target="_blank" rel="noopener noreferrer"><button className="button">View Resume</button></a></li>
                     <li>
                         <a href="https://www.linkedin.com/in/jose-haynes/" target="_blank" rel="noopener noreferrer">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
