@@ -3,7 +3,7 @@ const Research = () => {
         <main>
             <section className="antique">
                 <h1>Research Projects</h1>
-                <p>Explore a growing collection of infographics and publications viewed by 5,000+ daily across the internet in the academic disciplines of computer science, demography, and economics.</p>
+                <p>Explore a growing collection of infographics and publications viewed by 5,000+ daily across the internet in STEM and social science topics.</p>
             </section>
             <section className="cream">
                 <h1>Independent Research</h1>
