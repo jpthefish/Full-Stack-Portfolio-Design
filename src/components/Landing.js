@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const Landing = () => {
-    const welcomeText = ["Welcome to", "Bienvenido a", "Bienvenue sur"];
+    const welcomeText = ["Welcome to", "欢迎来到", "Bienvenido a", "مرحبا بك في", "Bienvenue sur", "Добро пожаловать в"];
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
