@@ -18,7 +18,7 @@ const Landing = () => {
         <main>
             <section className="antique">
                 <h1 className="primary-h1" key={welcomeText[index]}>{ welcomeText[index] }<img src="/android-chrome-512x512.png" alt="🐟" /></h1>
-                <p>This website is a collaborative platform created with the goal of advancing knowledge and showcasing academic and creative work. The platform is continually updated with new features and content through the help of insightful user feedback.</p>
+                <p>This website is a collaborative platform created with the goal of advancing knowledge and showcasing academic and creative work. The platform is continually updated with new content and features through the help of insightful user feedback.</p>
             </section>
             <section className="cream">
                 <h1>Explore Research

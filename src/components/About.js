@@ -3,10 +3,9 @@ const About = () => {
         <main>
             <section className="antique">
                 <h1>About the Developer</h1>
-                <p>My name is Joey and I am an engineer and researcher with experience in statistical analysis, software/systems engineering, and product design. My goal is to use these tools collaboratively to promote global development, innovation, and sustainability.</p>                
+                <p>My name is Joey and I am an engineer and researcher with experience in statistical analysis, software/systems engineering, and product design. My goal is to use these skills collaboratively to help promote global development, innovation, and sustainability.</p>                
                 <ul>
-                    {/* Normally "JP_Haynes_Resume.pdf" would be here */}
-                    <li><a href="/Global Development & Demography Paper.pdf" target="_blank" rel="noopener noreferrer"><button className="button">View Resume</button></a></li>
+                    <li><a href="/JP_Haynes_CV.pdf" target="_blank" rel="noopener noreferrer"><button className="button">Curriculum Vitae</button></a></li>
                     <li>
                         <a href="https://www.linkedin.com/in/jose-haynes/" target="_blank" rel="noopener noreferrer">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
