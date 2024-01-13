@@ -18,7 +18,7 @@ const Landing = () => {
         <main>
             <section className="antique">
                 <h1 className="primary-h1" key={welcomeText[index]}>{ welcomeText[index] }<img src="/android-chrome-512x512.png" alt="🐟" /></h1>
-                <p>This website is a collaborative platform created with the goal of advancing knowledge and showcasing academic and creative work. The platform is continually updated with new content and features through the help of insightful user feedback.</p>
+                <p>This website is a collaborative research endeavor created to advance knowledge and showcase academic and creative work. The platform is updated continually with new content and features through the help of insightful user feedback.</p>
             </section>
             <section className="cream">
                 <h1>Explore Research
@@ -35,7 +35,7 @@ const Landing = () => {
                     <path fill="currentColor" d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path>
                 </svg>
                 </h1>
-                <p>Explore a growing collection of collaborative research projects across several academic disciplines in STEM and the social sciences.</p>
+                <p>Explore a growing collection of interdisciplinary research projects spanning computer science/engineering, economics, and cognitive science.</p>
                 
                 <div className="wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -58,7 +58,7 @@ const Landing = () => {
                         <path fill="currentColor" d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path>
                     </svg>
                 </h1>
-                <p>Participate in an online chatroom with Google sign-in authentication. The chatroom provides a secure way for users to discuss ideas and collaborate while adhering to community guidelines.</p>
+                <p>Participate in an online chatroom with Google sign-in authentication. The chatroom provides a secure way for users to discuss ideas and collaborate.</p>
 
                 <div className="wave">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
