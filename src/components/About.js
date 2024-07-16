@@ -3,7 +3,7 @@ const About = () => {
         <main>
             <section className="antique">
                 <h1>About the Developer</h1>
-                <p>My name is Joey and I am an engineer and researcher with experience in statistical analysis, software/systems engineering, and product design. My goal is to use these skills collaboratively to help promote global development, innovation, and sustainability.</p>                
+                <p>J.P. Haynes (Joey)</p>                
                 <ul>
                     <li><a href="/JP_Haynes_CV.pdf" target="_blank" rel="noopener noreferrer"><button className="button">Curriculum Vitae</button></a></li>
                     <li>
