@@ -13,7 +13,7 @@ const Research = () => {
                 </ul>
             </section>
             <section className="cream">
-                <h1>NSF/ASME Poster, IDETC-CIE 2024</h1>
+                <h1>NSF/ASME Design Essay Poster, IDETC-CIE 2024</h1>
                 <p><i>"Adaptive Manufacturing Systems: Leveraging Predictive Modeling and Cyber-Physical-Social Systems (CPSS) for Real-Time Adaptation"</i></p>
                 <ul>
                     <li>
